@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 900px;
+    
+    padding: 20px 5%;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+ul {
+    align-self: self-start;
+    
+
+    width: 100%;
+    margin-top: 20px;
+    list-style: none;
+}
+
+#roll-btn {
+    padding: 10px 5%;
+    width: 9rem;
+    border: 0;
+    cursor: pointer;
+    background-color: #ff6b6b;
+    color: hsl(205, 100%, 94%);
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+ul li {
+    background-color: rgb(219, 231, 241);
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+ul li i {
+    color: rgb(12, 63, 63);
+    font-size: 20px;
+}
+
+.container .dice  {
+    color: #ff6b6b;
+    font-size: 5rem;
+    text-align: center;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    
+    
+    
+}
+
+
+.roll-animation {
+    animation-name: roll;
+}
+
+@keyframes roll {
+    0%{
+        transform: rotateY(0deg) rotateX(0deg);
+
+    }
+
+    100% {
+        transform: rotateY(720deg) rotateX(720deg);
+    }
+    
+}
